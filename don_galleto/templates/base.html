@@ -23,25 +23,30 @@
             <ul class="sidebar-nav">
               <li class="nav-title">Principal</li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="nav-icon cil-speedometer"></i> Inicio
-                  </a>
+                <a class="nav-link" href="{% url 'home' %}">
+                  <i class=" nav-icon bi bi-house"></i> Inicio
+                </a>
               </li>
               <li class="nav-title">Dashboards</li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="nav-icon cil-speedometer"></i> Dashboard 1
+                  <i class="nav-icon bi bi-graph-up-arrow"></i> Ventas Diarias
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="nav-icon cil-speedometer"></i> Dashboard 2
+                  <i class="nav-icon bi bi-cookie"></i> Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="nav-icon bi bi-gift"></i> Presentaciones
                 </a>
               </li>
               <li class="nav-title">Administración</li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="nav-icon cil-speedometer"></i> Clientes
+                <a class="nav-link" href="{% url 'lista_clientes' %}">
+                  <i class="nav-icon bi bi-person-raised-hand"></i> Clientes
                 </a>
               </li>
             </ul>
@@ -50,7 +55,7 @@
                 <img class="avatar-img" src="{% static 'img/user.jpg' %}" alt="user@email.com">
               </div>
               <div>
-                <p class="m-0 text-secondary fw-medium">Usuario</p>
+                <p class="m-0 text-secondary fw-medium">Juan Pablo</p>
               </div>
             </div>
           </div>

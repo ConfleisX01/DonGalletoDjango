@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid p-0">
+        <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Acciones</th>
+                <th scope="col">ID del cliente</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Estatus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="align-middle">
+                <th>
+                  <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-warning"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn btn-outline-danger"> <i class="bi bi-trash3-fill"></i></button>
+                  </div>
+                </th>
+                <td>12</td>
+                <td>Juan Pablo</td>
+                <td>correo@correo.com</td>
+                <td><span class="badge text-bg-primary">Activo</span></td>
+              </tr>
+              <tr class="align-middle">
+                <th>
+                  <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-warning"><i class="bi bi-pencil-fill"></i></button>
+                    <button type="button" class="btn btn-outline-danger"> <i class="bi bi-trash3-fill"></i></button>
+                  </div>
+                </th>
+                <td>21</td>
+                <td>Luis Roberto</td>
+                <td>correo@correo.com</td>
+                <td><span class="badge text-bg-secondary">Inactivo</span></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+{% endblock content %}
