@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.1/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-PDUiPu3vDllMfrUHnurV430Qg8chPZTNhY8RUpq89lq22R3PzypXQifBpcpE1eoB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.1/dist/js/coreui.bundle.min.js" integrity="sha384-8QmUFX1sl4cMveCP2+H1tyZlShMi1LeZCJJxTZeXDxOwQexlDdRLQ3O9L78gwBbe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/main.css'%}">
+    <script src="{% static 'js/menu_principal.js' %}"></script>
     <title>Don Galleto</title>
 </head>
 <body>
@@ -21,29 +22,121 @@
               </div>
             </div>
             <ul class="sidebar-nav">
-              <li class="nav-title">Principal</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="nav-icon cil-speedometer"></i> Inicio
-                  </a>
-              </li>
-              <li class="nav-title">Dashboards</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="nav-icon cil-speedometer"></i> Dashboard 1
+              <li class="nav-item nav-group hide">
+                <a class="nav-link nav-group-toggle" href="#">
+                  <i class="nav-icon bi bi-house"></i> Principal
                 </a>
+                <ul class="nav-group-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Inicio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Producción
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Solicitud de producción
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="nav-icon cil-speedometer"></i> Dashboard 2
+              <!-- TERMINA LA SECCION PRINCIPAL -->
+              <li class="nav-item nav-group hide">
+                <a class="nav-link nav-group-toggle" href="#">
+                  <i class="nav-icon bi bi-box-seam"></i> Inventarios
                 </a>
+                <ul class="nav-group-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Materia Prima
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Productos
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-title">Administración</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="nav-icon cil-speedometer"></i> Clientes
+              <!-- TERMINA LA SECCION INVENTARIO -->
+              <li class="nav-item nav-group hide">
+                <a class="nav-link nav-group-toggle" href="#">
+                  <i class="nav-icon bi bi-graph-up-arrow"></i> Ventas
                 </a>
+                <ul class="nav-group-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Lista de ventas
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Corte de ventas
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Pedidos realizados
+                    </a>
+                  </li>
+                </ul>
               </li>
+              <!-- TERMINA LA SECCION VENTAS -->
+              <li class="nav-item nav-group hide">
+                <a class="nav-link nav-group-toggle" href="#">
+                  <i class="nav-icon bi bi-table"></i> Dashboards
+                </a>
+                <ul class="nav-group-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Ventas
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Más vendidos
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Presentaciones
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- TERMINA LA SECCION DASHBOARDS -->
+              <li class="nav-item nav-group hide">
+                <a class="nav-link nav-group-toggle" href="#">
+                  <i class="nav-icon bi bi-building-gear"></i> Administración
+                </a>
+                <ul class="nav-group-items">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Clientes
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Usuarios
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Proveedores
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <span class="nav-icon"><span class="nav-icon-bullet"></span></span> Recetas
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- TERMINA LA SECCION ADMINISTRACION -->
             </ul>
             <div class="sidebar-footer border-top d-flex">
               <div class="avatar">
