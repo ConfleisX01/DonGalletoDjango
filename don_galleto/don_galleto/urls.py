@@ -5,7 +5,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('panel', views.panel, name='panel'),
     path('admin/', admin.site.urls),
-    path('clientes/', include('clientes_app.urls'),),
+    path('panel/clientes/', include('clientes_app.urls'),),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
